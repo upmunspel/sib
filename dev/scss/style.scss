@@ -1,5 +1,6 @@
 
 $link_color: #258cb3;
+$transparent:  rgba(255,255, 255, 0.75);
 @font-face {
 	font-family: "Oliver Bold";
 	src: url('../fonts/OliverBold/Oliver-Bold.eot');
@@ -22,7 +23,7 @@ body {
 	background-size: cover;
 	background-attachment: fixed;
 	height: 100%;
-    position: relative;
+	position: relative;
 	h1 {
 		
 	}
@@ -46,7 +47,7 @@ nav.navbar {
 	min-height: 40px;
 }
 nav.navbar-default {
-	background-color: rgba(255, 255, 255, 0.75);
+	background-color: $transparent;
 	border-radius: 0px;
 	.navbar-nav {
 		li.active {
@@ -80,10 +81,8 @@ nav.navbar-default {
 	}
 	
 }
-.transparent {
-	background-color: rgba(255, 255, 255, 0.75);
-}
-main.content {
+
+main {
 	h1{
 		font-family: "Oliver Bold", Sans-Serif;
 		text-transform: uppercase;
@@ -91,7 +90,7 @@ main.content {
 		margin: 0px 0px 18px 0px;
 	}
 
-	/*background-color: rgba(255, 255, 255, 0.75);*/
+	background-color: rgba(255, 255, 255, 0.75);
 	min-height: 300px;
 	padding: 20px;		
 	padding: 27px 50px 50px 50px;
@@ -105,17 +104,26 @@ main.content {
 		}
 	}
 }
+
 aside {
-	background-color: rgba(255, 255, 255, 0.75);
+	.search-block {
+		height: 30px;
+		margin-left: 10px;
+		margin-bottom: 10px;
+		background-color: $transparent;
+
+	}
+	.blocks{
+		background-color: $transparent;
+	}
 }
 
 footer {
 	position: absolute;
-    bottom: 0;
-    width: 100%;
-    left: 0;
+	bottom: 0;
+	width: 100%;
+	left: 0;
 	section {
-		
 		min-height: 40px;
 		p {
 			margin: 0px;
@@ -137,7 +145,7 @@ footer {
 @media (min-width: 992px) { 
 	.line-bg {
 		background: url("../images/line-bg.png") bottom center no-repeat;
-    	min-height: 60px;
+		min-height: 60px;
 	}
 	nav.navbar {
 		min-height: 40px;
@@ -148,13 +156,22 @@ footer {
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
 	.line-bg {
-	background: url("../images/line-bg.png") bottom center no-repeat;
-    min-height: 60px;
+		background: url("../images/line-bg.png") bottom center no-repeat;
+		min-height: 60px;
 	}
-	nav.navbar {
-		min-height: 40px;
+	.table-row {
+		display: table-row;
+		main {
+			background-color: rgba(255,255, 255, 0.75);
+			display: table-cell;
+			float: none;
+		} 
+		aside {
+			display: table-cell;
+			/*background-color: rgba(255, 255, 255, 0.75);*/
+			float: none;
+		}
 	}
-
 }
 
 
