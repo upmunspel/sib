@@ -1,0 +1,267 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Oliver Bold";
+  src: url("../fonts/OliverBold/Oliver-Bold.eot");
+  src: local("☺"), url("../fonts/OliverBold/Oliver-Bold.woff") format("woff"), 
+	   url("../fonts/OliverBold/Oliver-Bold.ttf") format("truetype"), 
+	   url("../fonts/OliverBold/Oliver-Bold.svg") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+/*@font-face {
+  font-family: "Trebuchet MS";
+  src: url("../fonts/TrebuchetMS/Trebuchet-MS.eot");
+  src: local("☺"), url("../fonts/TrebuchetMS/Trebuchet-MS.woff") format("woff"), 
+	   url("../fonts/TrebuchetMS/Trebuchet-MS.ttf") format("truetype"), 
+	   url("../fonts/TrebuchetMS/Trebuchet-MS.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+  */
+font-face {
+	font-family: 'Trebuchet MS';
+	src: url('../TrebuchetMS/fonts/Trebuchet-MS.eot');
+	src: local('☺'), url('../TrebuchetMS/fonts/Trebuchet-MS.woff') format('woff'), url('../fonts/TrebuchetMS/Trebuchet-MS.ttf') format('truetype'), url('../fonts/TrebuchetMS/Trebuchet-MS.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+
+body {
+  background: url("../images/bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Trebuchet MS";
+  font-size: 12px; }
+  body a:focus {
+    outline: 0;
+    outline-width: 0px; }
+  body > section {
+    margin-bottom: 100px; }
+  body a, body a:hover, body a:visited, body a:focus {
+    color: #258cb3; }
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto 0px;
+  position: relative;
+  padding-bottom: 100px; }
+
+header a.logo {
+  display: block;
+  min-height: 185px;
+  width: 300px;
+  margin: 0px auto;
+  background: url("../images/logo-bg.png") center center no-repeat; }
+
+nav.navbar {
+  min-height: 40px; }
+
+nav.navbar-default {
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 0px; }
+  nav.navbar-default .navbar-nav li.active {
+    background-color: transparent; }
+  nav.navbar-default .navbar-nav a {
+    color: #000;
+    font-family: "Oliver Bold", Sans-Serif;
+    font-size: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  nav.navbar-default .navbar-nav > .active > a, nav.navbar-default .navbar-nav > .active > a:hover, nav.navbar-default .navbar-nav > .active > a:focus {
+    background-color: transparent;
+    color: #258cb3; }
+  nav.navbar-default .navbar-nav > li > a:hover {
+    background-color: transparent;
+    color: #258cb3; }
+
+main {
+  background-color: rgba(255, 255, 255, 0.75);
+  font-family: "Trebuchet MS";
+  vertical-align: top; }
+  main h1, main h2, main h3, main h4, main h5, main h6 {
+    font-family: "Oliver Bold", Sans-Serif;
+    text-transform: uppercase;
+    font-size: 16px; }
+  main h1 {
+    margin: 0px 0px 18px 0px; }
+  main h2, main h3, main h4 {
+	 font-size: 14px;
+	 text-indent: 30px;
+     margin: 30px 0px;	
+  }  
+  main article p {
+    text-indent: 30px;
+    font-size: 12px;
+    text-align: justify; }
+  main .submitted {
+    margin-bottom: 1em;
+    font-style: italic;
+    font-weight: 400;
+    text-indent: 30px;
+    display: block;
+}
+
+aside .search-block {
+  height: 30px;
+  margin-left: 7px;
+  margin-bottom: 7px;
+  background-color: rgba(255, 255, 255, 0.75); }
+  aside .search-block .input-group{
+	 display: block; 
+  }
+  aside .search-block form input, aside .search-block form input:focus {
+    width: 100%;
+    height: 30px;
+    background: transparent;
+    border: 0px;
+    padding: 10px 10px;
+    outline-style: none; 
+	padding-right: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+	}
+  aside .search-block form .btn{
+    border-radius: 0px;
+    border: 0px;
+    height: 30px;
+    padding: 6px 12px; 
+	position:absolute;
+	right: 0px;
+	top: 0;
+	}
+.webform-client-form .form-actions {
+	margin: 10px 0px;
+}
+.webform-client-form .form-textarea {
+	height: 150px;
+}
+.left-info-item {
+		display: none;
+}
+#block-block-2 h3 {
+	cursor: pointer;
+	margin: 15px 0px;
+}
+aside .blocks {
+  padding: 25px 25px 25px 25px; }
+  aside .blocks .block article {
+    margin-bottom: 22px; }
+  aside .blocks .block h2 {
+    font-family: "Oliver Bold", Sans-Serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px; }
+    aside .blocks .block h2 a {
+      color: #258cb3; }
+  aside .blocks .block header {
+    overflow: hidden; }
+  aside .blocks .block h3 {
+    font-family: 'Noto Sans', sans-serif;
+    color: #258cb3;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-top: 0px; }
+  aside .blocks .block .content {
+    font-family: "Trebuchet MS";
+    font-size: 12px;
+    text-align: justify; }
+  aside .blocks .block-news h3 {
+    margin-left: 77px;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-top: 0px; }
+  aside .blocks .block-news time {
+    font-family: 'Abel', sans-serif;
+    font-size: 27px;
+    float: left;
+    width: 65px; }
+
+footer {
+  width: 100%;
+  margin-top: 60px; }
+  footer .container {
+    background-color: rgba(255, 255, 255, 0.75);
+    min-height: 35px; }
+  footer .container > section {
+    padding: 10px 30px;
+    width: 100%;
+    min-height: 35px;
+    position: relative; }
+    footer section p {
+      margin: 0px; }
+    footer section .content {
+      position: absolute; }
+
+@media (max-width: 768px) {
+  .line-bg {
+    background: none; }
+  nav.navbar {
+    min-height: 50px; }
+  aside {
+    background-color: rgba(255, 255, 255, 0.75); }
+  main {
+    padding: 15px 25px 25px 25px; } }
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .line-bg {
+    background: none; }
+  nav.navbar {
+    min-height: 50px; }
+  aside {
+    background-color: rgba(255, 255, 255, 0.75); }
+  main {
+    padding: 15px 25px 25px 25px; } }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .line-bg {
+    background: url("../images/line-bg.png") bottom center no-repeat;
+    min-height: 60px; }
+  nav.navbar {
+    min-height: 40px; }
+  aside {
+    background-color: rgba(255, 255, 255, 0.75); }
+  main {
+    padding: 15px 25px 25px 25px; } }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .line-bg {
+    background: url("../images/line-bg.png") bottom center no-repeat;
+    min-height: 60px; }
+  .table-row {
+    display: table-row; }
+    .table-row main {
+      padding: 25px 50px 50px 50px;
+      background-color: rgba(255, 255, 255, 0.75);
+      display: table-cell;
+      float: none; }
+    .table-row aside {
+      display: table-cell;
+      padding-left: 0px;
+      padding-right: 0px;
+      float: none;
+      background: url(../images/left-bg.png) top center no-repeat;
+      background-position-y: 37px;
+	  background-position: 0px 37px;}
+      .table-row aside .blocks {
+        border-left: 2px dashed #45657c; }
+  .wrapper {
+    margin: 0 auto -95px; }
+  footer .container {
+    background-color: inherit; }
+  footer .container > section {
+    background-color: rgba(255, 255, 255, 0.75); } }

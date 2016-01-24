@@ -1,7 +1,7 @@
 # Generated in development files #
 ##################################
-html/
-html/production/public/assets/dist/
+#html/
+#html/production/public/assets/dist/
 
 # Compiled source #
 ###################
